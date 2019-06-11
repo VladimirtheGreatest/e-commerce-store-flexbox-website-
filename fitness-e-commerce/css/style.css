@@ -1,0 +1,83 @@
+/*Global*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Cardo', serif;
+  font-size: 18px;
+  line-height: 1.6;
+  background-color: #484d5c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  color:#c0ccd4;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  color: #ffce00;
+}
+
+/*Main section*/
+
+.main {
+  text-align: center;
+  width: 90%;
+  opacity: 0;
+  display: none;
+  transition: opacity 1s ease-in;
+}
+
+.button{
+    background-color:#000000;
+    color: #ffce00;
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 15px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.main h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.main p {
+  font-size: 25px;
+}
+
+/* LOADER  */
+ .loader {
+  font-family: 'Cardo', serif;
+  font-size: 40px;
+  color: #ffce00;
+}
+
+.loader::after {
+  content: '\2026';
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: bottom;
+  animation: dots steps(4, end) 2s infinite;
+  width: 0px;
+}
+
+@keyframes dots {
+  to {
+    width: 1.25em;
+  }
+}
