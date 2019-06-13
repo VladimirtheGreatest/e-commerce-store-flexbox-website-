@@ -44,14 +44,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .landing{
-  width: 100%;
-  height: 100vh;
+  width: 100vw;
+  min-height: calc(100vh);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   position: relative;
-  background: url('http://getwallpapers.com/wallpaper/full/5/c/6/53683.jpg') no-repeat center center/cover;
+  background: url('http://getwallpapers.com/wallpaper/full/5/c/6/53683.jpg') no-repeat fixed center/cover;
 }
 
 .description{
@@ -158,33 +158,29 @@ h1, h2, h3, h4, h5, h6 {
 
 /*shop*/
 
-.header{
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
 
 .row1 {
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px;
-}
-
-.list{
-  flex: 50%;
-  max-width: 50%;
-  padding: 0 4px;
+  background: url('https://images7.alphacoders.com/714/714678.jpg') no-repeat right/cover fixed;
+  width: 100vw;
+  min-height: calc(100vh);
+  padding-top: 100px;
+  padding-left: 200px;
 }
 
 
 /* Create four equal columns that sits next to each other */
 .column {
-  flex: 25%;
-  max-width: 25%;
+  flex: 15%;
+  max-width: 15%;
   padding: 0 20px;
 }
 
 .column img {
   margin-top: 28px;
+  margin-right: 28px;
   vertical-align: middle;
 }
 
@@ -202,4 +198,34 @@ h1, h2, h3, h4, h5, h6 {
     flex: 100%;
     max-width: 100%;
   }
+  .grid-container h3{
+    font-size: 24px;
+  }
+}
+
+/*css grid area*/
+
+.item2 { grid-area: product1; }
+.item3 { grid-area: product2; }
+.item4 { grid-area: product3; }
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'product1 product1 product2 product2 ';
+  grid-gap: 0px;
+  padding: 0px;
+  font-size: 25px;
+  background: url('https://avante.biz/wp-content/uploads/Wallpapers-Fitness/Wallpapers-Fitness-037.jpg') no-repeat left/cover fixed;
+  width: 100vw;
+  min-height: calc(100vh);
+  position: relative;
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 200px;
 }
