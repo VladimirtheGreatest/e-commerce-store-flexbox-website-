@@ -41,11 +41,8 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0;
   display: none;
   transition: opacity 1s ease-in;
-  background: #eeeeee; /* Old browsers */
-  background: -moz-linear-gradient(top,  #eeeeee 0%, #eeeeee 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top,  #eeeeee 0%,#eeeeee 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom,  #eeeeee 0%,#eeeeee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#eeeeee',GradientType=0 ); /* IE6-9 */
+  background: url('https://distro.ibiblio.org/pclinuxos/wallpapers/back.jpg') no-repeat fixed  center/cover;
+
 }
 
 /*end of the main section*/
@@ -60,13 +57,13 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   flex-direction: column;
   position: relative;
-  background: url('http://getwallpapers.com/wallpaper/full/5/c/6/53683.jpg') no-repeat fixed center/cover;
+  background: url('http://getwallpapers.com/wallpaper/full/5/c/6/53683.jpg') no-repeat  center/cover;
 }
 
 .description{
   z-index: 2;
   width: 60%;
-  margin-right: 45px;
+  margin-right: 20px;
     -webkit-animation: lightSpeedIn 2s;
       animation: lightSpeedIn 2s;
 }
@@ -82,8 +79,10 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 15px;
 }
 
-.btn:hover {
+.button:hover {
   opacity: 0.9;
+  -webkit-animation: flash 1s;
+    animation: flash 1s;
 }
 
 .landing h1 {
@@ -96,6 +95,35 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* end of landing page with description*/
+
+/*headings*/
+
+.heading{
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #000000;
+}
+
+.heading h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.heading p {
+  font-size: 23px;
+}
+
+.yellow{
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  color: #ffce00;
+}
+
+/* end of headings*/
 
 /* LOADER  */
 
@@ -130,9 +158,11 @@ h1, h2, h3, h4, h5, h6 {
 .navbar {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   width: 100%;
   color: #000000;
-  background-color: #000000;
+  background: #000000;
+
 }
 
 .navbar > a:nth-child(1){
@@ -144,7 +174,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 14px 15px;
   text-decoration: none;
   text-align: center;
-  font-size: 25px;
+  font-size: 22px;
   font-weight: bold;
 }
 
@@ -176,10 +206,6 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 960px;
   margin: 0 auto;
 }
-
-/*.column {
-  position: relative;
-}*/
 
 .card{
   background-color: #ffffff;
@@ -221,7 +247,41 @@ box-shadow: 0 10px 5px #000000;
   color: #000000;
 }
 
+/*Text area, list of all products*/
+
+.grid-container{
+display: flex;
+width: 100vw;
+height: 120vh;
+display: flex;
+align-items: center;
+justify-content: flex-start;
+flex-direction: row;
+font-size: 25px;
+background: url('https://avante.biz/wp-content/uploads/Wallpapers-Fitness/Wallpapers-Fitness-037.jpg') no-repeat left/cover;
+}
+
+.item-2{
+  margin-left: 50px;
+}
+
+.grid-container h3:hover{
+  -webkit-animation: flash 1s;
+    animation: flash 1s;
+}
+
 /*Media queries*/
+
+@media (min-width: 600px) and (max-width: 900px) {
+  .grid-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+  .item-2{
+    margin-left: 0px;
+  }
+}
 
 @media (min-width: 600px) and (max-width: 800px) {
   .wrapper {
@@ -234,11 +294,32 @@ box-shadow: 0 10px 5px #000000;
 
 @media (max-width: 600px) {
   .grid-container h3{
-    font-size: 24px;
+    font-size: 17px;
   }
   .navbar a {
     font-size: 18px;
   }
+  .grid-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+  .grid-container{
+  background: #000000;
+  }
+  .description{
+    margin-right: 10px;
+  }
+  .item-2{
+    margin-left: 0px;
+  }
+  .heading{
+    padding-top: 100px;
+    height: 100%;
+    padding-bottom: 50px;
+  }
+  .grid-container{
+  height: 100%;
 }
 
 @media (max-width: 480px) {
@@ -266,38 +347,12 @@ box-shadow: 0 10px 5px #000000;
   .landing p {
     font-size: 15px;
   }
+  .description{
+    margin-right: 20px;
+  }
+  .navbar a{
+    font-size: 15px;
+  }
 }
 
 /* end of Media queries*/
-
-/*Text area, list of all products*/
-
-.item2 { grid-area: product1; }
-.item3 { grid-area: product2; }
-/*.item4 { grid-area: product3; }*/
-
-.grid-container {
-  display: grid;
-  grid-template-areas:
-    'product1 product1 product2 product2 ';
-  grid-gap: 0px;
-  padding: 0px;
-  font-size: 25px;
-  background: url('https://avante.biz/wp-content/uploads/Wallpapers-Fitness/Wallpapers-Fitness-037.jpg') no-repeat left/cover fixed;
-  width: 100vw;
-  min-height: calc(100vh);
-  position: relative;
-}
-
-.grid-container h3:hover{
-  -webkit-animation: flash 1s;
-    animation: flash 1s;
-}
-
-.grid-container > div {
-  text-align: center;
-  padding: 20px 0;
-  margin-top: 200px;
-}
-
-/* end of the text area, list of all products*/
