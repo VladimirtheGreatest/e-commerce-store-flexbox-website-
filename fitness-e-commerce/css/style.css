@@ -133,7 +133,6 @@ h1, h2, h3, h4, h5, h6 {
   color: #ffce00;
   display: flex;
   margin-top: 300px;
-  background: url('https://images7.alphacoders.com/714/714678.jpg') no-repeat fixed center/cover;
 }
 
 .loader::after {
@@ -174,7 +173,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 14px 15px;
   text-decoration: none;
   text-align: center;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: bold;
 }
 
@@ -348,7 +347,7 @@ background: url('https://avante.biz/wp-content/uploads/Wallpapers-Fitness/Wallpa
   }
 }
 
-@media (min-width: 600px) and (max-width: 800px) {
+@media (min-width: 580px) and (max-width: 800px) {
   .wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -386,6 +385,8 @@ background: url('https://avante.biz/wp-content/uploads/Wallpapers-Fitness/Wallpa
   .grid-container{
   height: 100%;
 }
+.navbar a {
+  padding: 14px 13px;
 }
 
 @media (max-width: 480px) {
