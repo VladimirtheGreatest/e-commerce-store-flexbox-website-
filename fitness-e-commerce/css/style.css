@@ -41,7 +41,7 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0;
   display: none;
   transition: opacity 1s ease-in;
-  background: url('https://distro.ibiblio.org/pclinuxos/wallpapers/back.jpg') no-repeat fixed  center/cover;
+  background: url(../images/bg.jpg)no-repeat  center/cover;
 
 }
 
@@ -199,6 +199,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #000000;
   color: #ffffff;
   font-size:16px;
+  padding-top: 100px;
 }
 
 .footer a{
@@ -246,6 +247,10 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   text-align: center;
   align-items: center;
+  /*background: url(../images/bg1.jpg)no-repeat center/contain;*/
+}
+.advertising img{
+  max-width: 100%;
 }
 
 /* Advertising section end */
@@ -381,6 +386,7 @@ background: url('https://avante.biz/wp-content/uploads/Wallpapers-Fitness/Wallpa
   .grid-container{
   height: 100%;
 }
+}
 
 @media (max-width: 480px) {
   .wrapper {
@@ -412,6 +418,12 @@ background: url('https://avante.biz/wp-content/uploads/Wallpapers-Fitness/Wallpa
   }
   .navbar a{
     font-size: 15px;
+  }
+  .footer{
+    font-size:12px;
+  }
+  .links{
+    font-size: 13px;
   }
 }
 
