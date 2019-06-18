@@ -1,5 +1,4 @@
 /*Global*/
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,8 +6,7 @@
   overflow-x: hidden;
 }
 
-
-a{
+a {
   text-decoration: none;
 }
 
@@ -16,15 +14,15 @@ body {
   font-family: 'Cardo', serif;
   font-size: 18px;
   line-height: 1.6;
-  color:#c0ccd4;
+  color: #c0ccd4;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   width: 100%;
   height: 100%;
-  background: url('https://images7.alphacoders.com/714/714678.jpg') no-repeat fixed center/cover;
-  overflow-x: hidden;
+  background:#000000;
+  overflow: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -34,33 +32,29 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*Main section or wrapper for the content*/
-
 .main {
   text-align: center;
   width: 100%;
   opacity: 0;
   display: none;
   transition: opacity 1s ease-in;
-  background: url(../images/bg.jpg)no-repeat  center/cover;
-
+  background: url(../images/bg.jpg)no-repeat center/cover;
 }
 
 /*end of the main section*/
-
 /*landing page with description*/
-
-.landing{
+.landing {
   width: 100vw;
-  min-height: calc(100vh);
+  min-height: 100vh;
   display: flex;
   align-items: flex-end;
   justify-content: center;
   flex-direction: column;
   position: relative;
-  background: url('http://getwallpapers.com/wallpaper/full/5/c/6/53683.jpg') no-repeat  center/cover;
+  background: url(../images/bg3.jpg)no-repeat center/cover;
 }
 
-.description{
+.description {
   z-index: 2;
   width: 60%;
   margin-right: 20px;
@@ -68,21 +62,21 @@ h1, h2, h3, h4, h5, h6 {
   animation: lightSpeedIn 2s;
 }
 
-.button{
-    background-color:#000000;
-    color: #ffce00;
-    display: inline-block;
-    text-decoration: none;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    margin-top: 15px;
+.button {
+  background-color: #000000;
+  color: #ffce00;
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 15px;
 }
 
 .button:hover {
   opacity: 0.9;
   -webkit-animation: flash 1s;
-    animation: flash 1s;
+  animation: flash 1s;
 }
 
 .landing h1 {
@@ -95,10 +89,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* end of landing page with description*/
-
 /*headings*/
-
-.heading{
+.heading {
   width: 100%;
   height: 50vh;
   display: flex;
@@ -117,22 +109,20 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 23px;
 }
 
-.yellow{
+.yellow {
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
   color: #ffce00;
 }
 
 /* end of headings*/
-
 /* LOADER  */
-
- .loader {
+.loader {
   font-family: 'Cardo', serif;
   font-size: 40px;
   color: #ffce00;
-  display: flex;
-  margin-top: 300px;
+  position: absolute;
+  top: 30%;
 }
 
 .loader::after {
@@ -151,9 +141,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* LOADER end   */
-
 /*navigation bar */
-
 .navbar {
   display: flex;
   justify-content: flex-end;
@@ -161,15 +149,14 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   color: #000000;
   background: #000000;
-
 }
 
-.navbar > a:nth-child(1){
+.navbar>a:nth-child(1) {
   margin-right: auto;
 }
 
 .navbar a {
-  color:#ffffff;
+  color: #ffffff;
   padding: 14px 15px;
   text-decoration: none;
   text-align: center;
@@ -180,13 +167,11 @@ h1, h2, h3, h4, h5, h6 {
 .navbar a:hover {
   color: #ffce00;
   -webkit-animation: flash 1s;
-    animation: flash 1s;
+  animation: flash 1s;
 }
 
 /* end of the navigation bar */
-
 /* Footer */
-
 .footer {
   display: flex;
   flex-direction: column;
@@ -197,48 +182,46 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
   background-color: #000000;
   color: #ffffff;
-  font-size:16px;
+  font-size: 16px;
   padding-top: 100px;
 }
 
-.footer a{
+.footer a {
   text-decoration: none;
   color: #ffffff;
 }
 
-.links{
+.links {
   font-size: 20px;
 }
 
-.links a:hover{
+.links a:hover {
   color: #ffce00;
 }
 
-.social i{
+.social i {
   margin: 5px;
 }
 
-.payment i{
+.payment i {
   margin: 5px;
 }
 
-.social i:hover{
+.social i:hover {
   color: #ffce00;
   -webkit-animation: flash 1s;
-    animation: flash 1s;
+  animation: flash 1s;
 }
 
-.payment i:hover{
+.payment i:hover {
   color: #ffce00;
   -webkit-animation: flash 1s;
-    animation: flash 1s;
+  animation: flash 1s;
 }
 
 /* Footer end */
-
 /* Advertising section */
-
-.advertising{
+.advertising {
   width: 100%;
   height: 100%;
   display: flex;
@@ -246,16 +229,14 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   text-align: center;
   align-items: center;
-  /*background: url(../images/bg1.jpg)no-repeat center/contain;*/
 }
-.advertising img{
+
+.advertising img {
   max-width: 100%;
 }
 
 /* Advertising section end */
-
 /*Product boxes with the individual description*/
-
 .wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
@@ -271,7 +252,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
 }
 
-.card{
+.card {
   background-color: #ffffff;
   height: 300px;
   width: 100%;
@@ -282,13 +263,13 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 5%;
 }
 
-.card:hover{
+.card:hover {
   -webkit-box-shadow: 0 10px 5px #000000;
--moz-box-shadow: 0 10px 5px #000000;
-box-shadow: 0 10px 5px #000000;
+  -moz-box-shadow: 0 10px 5px #000000;
+  box-shadow: 0 10px 5px #000000;
 }
 
-.card h4{
+.card h4 {
   font-size: 30px;
   font-weight: bold;
   text-align: left;
@@ -312,83 +293,119 @@ box-shadow: 0 10px 5px #000000;
 }
 
 /*Text area, list of all products*/
-
-.grid-container{
-display: flex;
-width: 100vw;
-height: 120vh;
-display: flex;
-align-items: center;
-justify-content: flex-start;
-flex-direction: row;
-font-size: 25px;
-background: url('https://avante.biz/wp-content/uploads/Wallpapers-Fitness/Wallpapers-Fitness-037.jpg') no-repeat left/cover;
+.grid-container {
+  display: flex;
+  width: 100vw;
+  height: 120vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  font-size: 25px;
+    background: url(../images/bg4.jpg)no-repeat left/cover;
 }
 
-.item-2{
+.item-2 {
   margin-left: 50px;
 }
 
-.grid-container h3:hover{
+.grid-container h3:hover {
   -webkit-animation: flash 1s;
-    animation: flash 1s;
+  animation: flash 1s;
 }
 
 /*Media queries*/
-
 @media (min-width: 600px) and (max-width: 900px) {
-  .grid-container{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  .grid-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  .item-2{
+
+  .item-2 {
     margin-left: 0px;
   }
 }
 
-@media (min-width: 580px) and (max-width: 800px) {
+/*adjustement for the product grid on tablets*/
+@media (min-width: 480px) and (max-width: 700px) {
   .wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    max-width: 960px;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    max-width: 100%;
     margin: 0 auto;
   }
 }
 
+@media (min-width: 700px) and (max-width: 780px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+/*small screens*/
 @media (max-width: 600px) {
-  .grid-container h3{
+  .grid-container h3 {
     font-size: 17px;
   }
+
   .navbar a {
     font-size: 18px;
   }
-  .grid-container{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+  .grid-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  .grid-container{
-  background: #000000;
+
+  .grid-container {
+    background: #000000;
   }
-  .description{
+
+  .description {
     margin-right: 10px;
   }
-  .item-2{
+
+  .item-2 {
     margin-left: 0px;
   }
-  .heading{
+
+  .heading {
     padding-top: 100px;
     height: 100%;
     padding-bottom: 50px;
   }
-  .grid-container{
-  height: 100%;
-}
-.navbar a {
-  padding: 14px 13px;
+
+  .grid-container {
+    height: 100%;
+  }
+
+  .navbar a {
+    padding: 14px 13px;
+  }
 }
 
+/*landscape for the small screens adjustement*/
+@media (max-height: 400px) {
+  .landing h1 {
+    font-size: 23px;
+    margin-bottom: 10px;
+  }
+
+  .landing p {
+    font-size: 11px;
+  }
+
+  .description {
+    margin-right: 0px;
+  }
+}
+
+/*iphone 5*/
 @media (max-width: 480px) {
   .wrapper {
     display: grid;
@@ -396,7 +413,8 @@ background: url('https://avante.biz/wp-content/uploads/Wallpapers-Fitness/Wallpa
     width: 100%;
     margin: 0 auto;
   }
-  .card h4{
+
+  .card h4 {
     font-size: 25px;
   }
 
@@ -405,25 +423,31 @@ background: url('https://avante.biz/wp-content/uploads/Wallpapers-Fitness/Wallpa
   }
 
   .card p {
-  font-size: 15px;
+    font-size: 15px;
   }
+
   .landing h1 {
     font-size: 30px;
     margin-bottom: 10px;
   }
+
   .landing p {
     font-size: 15px;
   }
-  .description{
+
+  .description {
     margin-right: 20px;
   }
-  .navbar a{
+
+  .navbar a {
     font-size: 15px;
   }
-  .footer{
-    font-size:12px;
+
+  .footer {
+    font-size: 12px;
   }
-  .links{
+
+  .links {
     font-size: 13px;
   }
 }
